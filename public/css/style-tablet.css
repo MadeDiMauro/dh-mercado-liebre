@@ -1,0 +1,168 @@
+/*Diseño para tablet*/
+@media (min-width: 481px) and (max-width: 769px) {
+    .logo {
+        width: 50%;
+    }
+
+
+    /*Buscador de productos*/
+    .buscador {
+        width: 50%;
+    }
+
+
+    /*Texto de comprar en cuotas*/
+    .texto {
+        width: 100%;
+    }
+
+    .texto-header {
+        font-size: 20px;
+    }
+
+    /*Navegación y panel de usuario*/
+
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav li {
+        margin: 10px;
+        list-style: none;
+        font-size: large;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--gris-oscuro);
+    }
+
+    /*Sección menu burger*/
+    .burger-menu {
+        display: none;
+    }
+
+    /*Banner del proyecto*/
+    .banner {
+        margin: none;
+        padding: none;
+        width: 100%;
+    }
+
+    .seccion-banner {
+        box-sizing: border-box;
+        background-color: var(--gris-claro);
+        display: flex;
+        align-items: flex-end;
+    }
+
+    /*Productos, detalle y vista de 4 cuatro productos*/
+
+    main .producto-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .producto {
+        padding: 15px;
+        border: 1px solid #ebebeb;
+        border-radius: 2px;
+        border-style: initial;
+        border-color: var(--gris-oscuro);
+        margin: 15px;
+        width: 40%;
+        background-color: #fff;
+    }
+
+    .producto img {
+        width: 70%;
+    }
+
+    .detalle {
+        margin: auto;
+        padding: 15px;
+        border-top: solid 1px rgb(232, 232, 232);
+        width: 100%;
+        line-height: 30px;
+        text-align: left;
+        position: relative;
+    }
+
+
+    /*Precio de los productos*/
+    .content-precio-descuento {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .precios {
+        font-size: 18px;
+        font-weight: bold;
+        width: 50%;
+        align-self: flex-start;
+    }
+
+    .descuentos {
+        font-size: 16px;
+        color: #39b54a;
+        width: 50%;
+    }
+
+    /*Descripciones*/
+    .descripciones {
+        font-size: 16px;
+    }
+
+    /*Textos genericos de cada sección*/
+    .titulares {
+        width: 100%;
+        margin: 0px 17px 0px 17px;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    /*Sección de footer*/
+    footer article {
+        text-align: center;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer i {
+        color: var(--celeste);
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .copyright {
+        text-align: left;
+        margin: 20px;
+    }
+}

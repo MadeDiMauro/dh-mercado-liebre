@@ -1,0 +1,351 @@
+:root {
+    --amarillo: #eac926;
+    --azul: #03264c;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    --tipografia: Roboto;
+}
+
+* {
+    margin: ​0​px​;
+    padding: ​0​px​;
+    box-sizing: border-box;
+}
+
+
+header,
+main,
+footer,
+.seccion-banner {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.div-header {
+    background-color: var(--amarillo);
+    margin: 0px;
+    padding: 0px;
+}
+
+.div-banner {
+    background-color: #dbdbdb;
+    margin: 0px;
+    padding: 0px;
+}
+
+.div-main {
+    background-color: var(--gris-claro);
+    margin: 0px;
+    padding: 0px;
+}
+
+.div-footer {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Cuerpo del proyecto*/
+body {
+    font-family: var(--tipografia);
+}
+
+/*Sección header del proyecto*/
+header {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--amarillo);
+}
+
+/*Sección main del proyecto*/
+main {
+    text-align: center;
+    width: 100%;
+    padding: 50px;
+    background-color: var(--gris-claro);
+}
+
+/*Sección footer del proyecto*/
+footer {
+    padding: 50px;
+    border-color: var(--gris-oscuro);
+    background-color: white;
+    border: none;
+}
+
+/*Textos genericos de cada sección*/
+
+h3 {
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Buscador de la página*/
+
+.buscador {
+    margin: auto;
+    text-align: center;
+}
+
+.form-buscador div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.buscador input[type="search"] {
+    width: 80%;
+    border-radius: 7px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+}
+
+.button {
+    position: relative;
+    left: -15px;
+    background-color: white;
+    width: 15%;
+    border-radius: 7px;
+    padding: 10px 10px 10px 10px;
+    border: none;
+}
+
+
+.fa-search {
+    color: var(--gris-oscuro);
+}
+
+
+/*Logo del proyecto*/
+.logo {
+    padding: 20px;
+}
+
+/*Seccion burger mobile*/
+.seccion-burger {
+    display: none;
+}
+
+
+
+
+
+
+/*Diseño del formulario registro y login*/
+
+.formulario {
+    background-color: var(--gris-claro);
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+
+.titulo-form-login {
+    width: 100%;
+    margin: 0px;
+}
+
+.titulo-form-registro {
+    width: 100%;
+    margin: 0px;
+}
+
+.form {
+    width: 100%;
+    text-align: left;
+    line-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-section {
+    width: 100%;
+}
+
+.foto-contrasenia,
+.datos-personales label {
+    font-weight: bold;
+}
+
+
+.datos-personales label,
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+}
+
+.perfil-usuario label {
+    width: 100%;
+}
+
+
+.categorias-interes {
+    width: 100%;
+}
+
+.form input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="file"] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+}
+
+
+.form input[type="radio"],
+input[type="checkbox"] {
+    margin-left: 1%;
+    margin-right: 5%;
+}
+
+.form input[type="submit"] {
+    background-color: var(--azul);
+    color: white;
+    margin-top: 10px;
+    width: 50%;
+    border-radius: none;
+    padding: 10px 20px 10px 20px;
+    border: none;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0022AA;
+    color: white;
+}
+
+.form input[type="reset"] {
+    background-color: var(--gris-oscuro);
+    color: white;
+    margin-top: 10px;
+    border-radius: none;
+    width: 50%;
+    padding: 10px 20px 10px 20px;
+    border: none;
+}
+
+.form input[type="reset"]:hover {
+    background-color: grey;
+    color: black;
+}
+
+.form label {
+    text-align: left;
+}
+
+.form h3,
+h4 {
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+.form ul li {
+    list-style: none;
+}
+
+
+
+/*Animación de tarjeta de producto*/
+.producto {
+    transition: box-shadow 1s;
+}
+
+.producto:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+/*Icono de envio*/
+.content-icono-envio {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-shipping-fast {
+    color: var(--verde);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: rotate(0);
+    transition: transform 0.5s;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+
+/*Animación de mostrar descripción*/
+@keyframes descri-mostrar {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+
+
+}
+
+.producto:hover .descripciones {
+    display: block;
+    animation: descri-mostrar 1s 1;
+    animation-fill-mode: forwards;
+}
+
+.descripciones {
+    display: none;
+}
+
+.producto:hover .fa-shipping-fast {
+    transform: rotate(-90deg);
+}
+
+
+
+
+
+/*Íconos del footer*/
+.fa-credit-card {
+    transition: color 0.5s;
+}
+
+.fa-credit-card:hover {
+    color: grey;
+}
+
+.fa-gift {
+    transition: color 0.5s;
+}
+
+.fa-gift:hover {
+    color: grey;
+}
+
+.fa-user-shield {
+    transition: color 0.5s;
+}
+
+.fa-user-shield:hover {
+    color: grey;
+}
